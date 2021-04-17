@@ -1,7 +1,7 @@
 {
   "name": "HelloRPA",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "SortAndFilterExcel.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.5]",
     "UiPath.Mail.Activities": "[1.9.5]",
@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.6.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -44,6 +44,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "04be811c-6d86-42ec-98b5-eb7a7dc18b18",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "SortAndFilterExcel.xaml",
+      "uniqueId": "0a8b8078-b764-4001-8e56-1e1e144f99d5",
       "input": [],
       "output": []
     }
