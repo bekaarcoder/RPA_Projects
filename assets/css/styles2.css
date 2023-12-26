@@ -1,0 +1,275 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.body {
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 30px;
+    overflow: hidden;
+}
+
+.navbar .logo a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar .logo a strong {
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul a {
+    font-size: 19px;
+    font-weight: 400;
+    color: #CCCCCC;
+    text-transform: capitalize;
+}
+
+.navbar ul a:hover {
+    color: #FFFFFF;
+}
+
+.header {
+    background-image: url(../images/header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header .container .box {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translate(0%, -50%);
+    max-width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.header .box h1 {
+    color: #FFFFFF ;
+}
+
+.header .box h2 {
+    color: #FFFFFF ;
+}
+
+.header .box p {
+    color: #FFFFFF ;
+}
+
+.header .box .btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .box .btn {
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 30px; 
+    font-size: 16px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.header .box .btn:hover {
+    background-color: #EEEEEE;
+    color: #444444;
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .container {
+    display: flex;
+    padding: 1rem 6%;
+    justify-content: space-between;
+}
+
+.about .container .box {
+    width: 50%;
+    min-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about .container .box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+
+.about .container .box ul li {
+    font-size: 18px;
+    color: #111;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: capitalize;
+}
+
+.about .container .box ul li i {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.about .container .box .signature {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.about .container .box img {
+    width: 80px;
+    height: fit-content;
+}
+
+.about .container .box .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #000000;
+    padding-left: 1rem;
+}
+
+.about .container .about-image {
+    width: 50%;
+    min-width: 300px;
+    overflow: hidden;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about .about-image .image {
+    width: 50%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.about .about-image .image:hover::after,
+.about .about-image .image:hover::before
+ {
+    margin: 0px 0px;
+}
+
+.about .about-image .image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 45%;
+    height: 70%;
+    background-color: #b2b2b2;
+    z-index: -1;
+    transition: all 400ms ease;
+}
+
+.about .about-image .image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 45%;
+    height: 70%;
+    background-image: url(../images/dotted_black_background.jpg);
+    background-size: contain;
+    background-position: top right;
+    z-index: -1;
+    transition: all 400ms ease;
+}
+
+.about .about-image .image img {
+    width: 100%;
+    min-width: 300px;
+    object-fit: cover;
+}
